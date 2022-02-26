@@ -121,7 +121,7 @@ trait Controller
             $this->error(__('Parameter %s can not be empty', ''));
         }
         $this->view->share("row", $row);
-        
+
         return $this->view->fetch();
     }
 

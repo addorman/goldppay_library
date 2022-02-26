@@ -4,7 +4,7 @@ namespace App\Model;
 
 use Moogula\Database\Eloquent\Model;
 
-class AuthRule extends Model
+class AgentRule extends Model
 {
 
     protected $fillable = [
@@ -12,4 +12,13 @@ class AuthRule extends Model
         'ismenu', 'menutype', 'extend', 'py', 'pinyin', 'createtime', 'updatetime', 'weigh', 'status',
     ];
 
+    public function getIsmenuList()
+    {
+        return ['1' => __('Yes'), '0' => __('No')];
+    }
+
+    public function getStatusList()
+    {
+        return [1 => __('Normal'), 0 => __('Hidden')];
+    }
 }

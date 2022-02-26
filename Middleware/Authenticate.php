@@ -6,6 +6,8 @@ use Closure;
 use Moogula\Auth\AuthenticationException;
 use Moogula\Auth\Middleware\Authenticate as Middleware;
 use Moogula\Contracts\Http\Request as RequestContract;
+use Moogula\Contracts\Http\Response;
+use Moogula\Http\Exception\HttpResponseException;
 
 class Authenticate extends Middleware
 {
